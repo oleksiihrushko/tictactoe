@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+h1 {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.board {
+  background: #c2ce5b;
+  width: 320px;
+  height: 320px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.squares {
+  width: 100px;
+  height: 100px;
+  background: #c2ce5b;
+  border: 3px solid #fff;
+  cursor: pointer;
+  outline: none;
+  background-size: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.X {
+  background-image: url(./images/cross.png);
+}
+.O {
+  background-image: url(./images/circle.png);
+}
+
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  padding: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+.info-wrapper button,
+.winModal button {
+  background: #272727;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0.5rem 1rem;
+}
+
+.winModal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 160px;
+  background-color: black;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+}
